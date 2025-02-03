@@ -1,0 +1,17 @@
+export const icondata = [
+  {url:"/img/icon1.png", art:"icon"},
+  {url:"/img/icon2.png", art:"icon"},
+  {url:"/img/icon3.png", art:"icon"},
+  {url:"/img/icon4.png", art:"icon"},
+  {url:"/img/icon5.png", art:"icon"},
+  {url:"/img/icon6.png", art:"icon"},
+  {url:"/img/icon7.png", art:"icon"},
+  {url:"/img/icon8.png", art:"icon"},
+  {url:"/img/icon9.png", art:"icon"},
+  {url:"/img/icon10.png", art:"icon"},
+  {url:"/img/icon11.png", art:"icon"},
+  {url:"/img/icon12.png", art:"icon"},
+  {url:"/img/icon13.png", art:"icon"},
+  {url:"/img/icon14.png", art:"icon"},
+  {url:"/img/icon15.png", art:"icon"},
+]
