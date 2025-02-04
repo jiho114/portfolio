@@ -2,7 +2,7 @@ import React from 'react';
 
 const Eight = () => {
   return (
-    <div className="project-make project-make2 project-make-top">
+    <div id="eight" className="project-make project-make2 project-make-top">
     <div className="container">
       <div className="project-num">
         <span className="numFont">02</span>

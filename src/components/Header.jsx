@@ -1,6 +1,17 @@
 import React from "react";
 
 const Header = () => {
+
+  const handleScroll = (event) => {
+    event.preventDefault(); // 기본 링크 동작 방지
+    const targetId = event.currentTarget.getAttribute("href").slice(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header id="header">
       <div className="cover-img-box">
@@ -59,7 +70,7 @@ const Header = () => {
             <div className="header-main-right">
               <ul>
                 <li>
-                  <a href="javascript:" title="info">
+                  <a href="#about" onClick={handleScroll} title="info">
                     <h3 className="en info">INFO</h3>
                     <span className="btn">
                       <img className="flower" src="/img/flowerBtn.png" alt="btn" />
@@ -73,7 +84,7 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="javascript:" title="project">
+                  <a href="#list" onClick={handleScroll} title="project">
                     <h3 className="en project">project</h3>
                     <span className="btn">
                       <img className="flower" src="/img/flowerBtn.png" alt="btn" />

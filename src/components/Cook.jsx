@@ -2,7 +2,7 @@ import React from 'react';
 
 const Cook = () => {
   return (
-    <div className="project-make project-make2 project-make-top" style={{marginBottom:"50px"}}>
+    <div id="cook" className="project-make project-make2 project-make-top" style={{marginBottom:"50px"}}>
     <div className="container">
       <div className="project-num">
         <span className="numFont">04</span>

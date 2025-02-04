@@ -7,14 +7,25 @@ const List = () => {
     {num: 3, title: "영화 사이트", description: "웹 디자인 | 메인페이지 | 상세페이지 | 검색 기능 + 검색 상세 페이지 | TMDB API "},
     {num: 4, title: "레시피 사이트", description: "웹 디자인 | 메인페이지 | 공공 데이터 API"},
   ]
+
+  const handleScroll = (event) => {
+    event.preventDefault(); // 기본 링크 동작 방지
+    const targetId = event.currentTarget.getAttribute("href").slice(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <section className='project-list'>
+    <section id='list' className='project-list'>
       <div className="container">
 				<h2 className="en title">project</h2>
 				<ul className="list">
           {listData.map((item, idx) => (
             <li className='item' key={idx}>
-              <a href="javascript:" title="에어부산" className='airbusan'>
+              <a onClick={handleScroll} href={ item.title === "에어부산" ? "#airbusan" : item.title === "에잇세컨즈" ? "#eight" : item.title === "영화 사이트" ? "#movie" : item.title === "레시피 사이트" ? "#cook" : "#" } title="에어부산" className='airbusan'>
                 <span className='numFont'>{item.num}</span>
                 <h3 className='project-title'>{item.title}</h3>
                 <span className='project-info'>{item.description}</span>

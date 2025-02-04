@@ -3,7 +3,7 @@ import { icondata } from '../data/imgdata'
 
 const About = () => {
   return (
-    <section className='about'>
+    <section id='about' className='about'>
       <div className="container">
 				<h2 className="en title">ABOUT</h2>
 				<div className="info-area">

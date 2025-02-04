@@ -8,6 +8,9 @@ const Main = () => {
       <About/>
       <List/>
       <Project/>
+      <footer>
+        <h3>제 작품을 감상해 주셔서 진심으로 감사드립니다. 이지호였습니다.</h3>
+      </footer>
     </main>
   );
 };

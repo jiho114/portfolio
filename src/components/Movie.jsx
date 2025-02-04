@@ -2,7 +2,7 @@ import React from 'react';
 
 const Movie = () => {
   return (
-    <div className="project-make project-make3 project-make-top">
+    <div id="movie" className="project-make project-make3 project-make-top">
     <div className="container">
       <div className="project-num">
         <span className="numFont">03</span>
