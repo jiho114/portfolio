@@ -789,20 +789,21 @@
     padding: 0 40px;
     .header-main {
       .header-main-right {
-        bottom: 50%;
+        bottom: 51%;
       }
     }
   }
   #header {
     height: 80vh;
     .cover-img-box {
-      width: 400px;
+      padding-top: 60px;
+      width: 368px;
       .cover1 {
-        width: 300px;
+        width: 266px;
       }
       .cover2 {
-        width: 282px;
-        top: 4px;
+        width: 234px;
+        top: 73px;
       }
     }
     .cover_gif {
